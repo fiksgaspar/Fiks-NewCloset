@@ -1,0 +1,723 @@
+body {
+    background-color: black;
+}
+.navegador{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.tituloNew {
+    font-family: 'Staatliches', cursive;
+    font-size: 60px;
+    border-bottom: solid 1px black;
+    color: white;
+    padding-left: 50px;
+}
+
+ul li {
+    
+    justify-self: self-end;
+    justify-items: self-end;
+    text-justify: end;
+    
+   
+
+}
+
+li a {
+    text-decoration: white;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+li a:hover {
+    color: white;
+}
+
+.fotos__index {
+    position: absolute;
+    
+}
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    color: black;
+    border: 3px solid black;
+    padding: 10px;
+    text-decoration: white;
+ }
+ .centered a{
+     color: black;
+     text-decoration: white;
+ }
+ 
+ .emilio {
+        padding-top: 70px;
+ }
+ .imeil__1 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    margin-left: 600px;
+   
+ }
+ .imeil__2{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    margin-left: 450px;
+    padding-top: 20px;
+ }
+
+ .imeil__3{
+    margin-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+ }
+ .foot{
+     background-color: white;
+     padding-top: 110px;
+     padding-bottom: 90px;
+     
+     
+ }
+ .Redes {
+     padding-left: 600px;
+ }
+ .policy {
+     text-justify: auto;
+     justify-self: auto;
+     justify-content: center;
+     justify-items: center;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 60px;
+ }
+
+
+
+
+
+
+
+  .top-nav-bar{
+     height: 57px;
+     top: 0;
+     position: sticky;
+     padding-bottom: 20px;
+     
+     z-index: 2;
+     margin-bottom: 50px;
+     
+     
+  }
+
+  .logo {
+    height: 200px;
+    margin-top: -40px;
+
+
+  }
+  .form-control {
+      margin-top: 30px;
+      margin-left: 120px;
+      border-top-left-radius: 20px ;
+      border-bottom-left-radius: 20px ;
+      border-top-right-radius: 0 ;
+      border-bottom-right-radius: 0 ;
+      box-shadow: none ;
+      border: none;
+  }
+.input-group-text{
+    background:black;
+    margin: 30px 10px 92px 0;
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search {
+    color: white;
+    
+    
+}
+
+.menu-bar {
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li {
+    border-left: 1px solid white;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-shopping-cart {
+    margin-right: 5px;
+
+}
+
+@media only screen and (max-width:980px){
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+
+    }
+    .search-box{
+        width: 100%;
+      
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 0 0;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+}
+
+/*---------SIDE MENU-----------*/
+
+
+.side-menu{
+    height: 79%;
+    width: 15%;
+    font-size: 20px;
+    float: left;
+    z-index: 2;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    margin-top: 30px;
+    
+    
+    
+}
+
+.side-menu ul {
+    margin-left: 10px;
+}
+.side-menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.side-menu ul li:hover {
+    color: white
+}
+
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    margin-top: 70px;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background-color: darkslategray;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fa-angle-right {
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+#menu-btn, #close-btn {
+    font-size: 50px;
+    margin: 30px;
+    color: white;
+    display: none;
+}
+
+@media only screen and (max-width:980px){
+    .side-menu{
+        width: 34%;
+        z-index: 20;
+        top: 250px;
+        position: fixed;
+        font-size: 20px;
+        background: blue;
+        display: none;
+
+    }
+    .side-menu ul li:hover ul{
+        margin-top: 203px;
+        margin-left: 260px;
+    }
+    #menu-btn {
+        display: block;
+    }
+}
+
+/*---------------------SLIDER CSS  ------------------*/
+
+.slider {
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+
+.carousel {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5 );
+}
+.carousel-indicators {
+    z-index: 1 !important;
+}
+
+@media only screen and (max-width:980px){
+    .slider {
+        width: 100%;
+        margin-left: 0 ;
+       
+    }
+
+}
+
+/*----------CATEGORIAS-----------*/
+
+.categorias{
+    margin: 50px 0;
+}
+.categorias img{
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;   
+}
+.categorias img:hover{
+    transform: scale(1.1);
+}
+
+/*--------------ON SALE--------------*/
+
+.title-box{
+    background-color: white;
+    color: black;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex ;
+    font-family: 'Staatliches', cursive;
+}
+.title-box::after{
+    content: '';
+    border-top: 40px solid white;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+
+/*------------product-top--------------*/
+
+.product-top{
+    width: 100%;
+
+}
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .fa{
+    cursor: pointer;
+    background-color: none;
+    color: black;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border: 0.5px solid black;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary{
+    background:none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-top:hover .overlay-right {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/*---------PRODUCT BOTTOM----------*/
+
+.product-bottom .fa{
+    color: goldenrod;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    font-family: 'Staatliches', cursive;
+}
+.product-bottom h5{
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 10px;
+    font-family: 'Staatliches', cursive;
+}
+
+/*-----------------NEW PRODUCTS-----------------*/
+
+.new-products{
+    margin:80px 0;
+}
+
+/*---------------------WEBSITE FEATURES-------------------------*/
+
+.website-features{
+    margin: 60px 0;
+
+}
+.website-features img{
+    width: 60%;
+}
+.fa-credit-card{
+    color: white
+}
+.fa-truck{
+    color: white;
+}
+.fa-refresh{
+    color: white;
+}
+.fa-heart{
+    color: white;
+}
+.feature-text{
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    padding-left: 20px;
+    color: white;
+}
+.feature-box{
+    padding-top: 20px;
+
+}
+
+/*-----------FOOTER---------------*/
+
+.footer{
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+}
+.footer h1{
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    margin: 25px 0;
+}
+.footer p {
+    font-size: 15px;
+    font-family: 'Staatliches', cursive;
+}
+.footer-image img{
+    width: 250px;
+    height: 150px;
+    
+}
+.copyright{
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.footer hr{
+    margin-top: 10px;
+}
+.footer .row .fa{
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+/*----------SINGLE PRODUCT SLIDER--------------*/
+
+.single-product #product-slider img{
+    width: 300px;
+    height: 400px;
+}
+.single-product{
+    margin-top: 70px;
+}
+.new-arrival{
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Staatliches', cursive;
+}
+.col-md-7 h2{
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+.single-product .fa{
+    color: white;
+}
+.single-product .price{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.single-product input{
+    border: solid 1px white;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.single-product .btn-primary{
+    background: #555;
+    color: black;
+    font-family: 'Staatliches', cursive;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none;
+}
+
+/*------------------Descripcion del producto---------------------*/
+
+.product-description h6{
+    margin-top: 50px;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+.product-description p{
+    margin-top: 30px;
+    color: white;
+}
+.product-description hr{
+    margin-bottom: 20px;
+}
+
+
+/*---------CARRITO DE COMPRAS-----------*/
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info p{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+.cart-info small{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 15px;
+}
+.container tr th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    border: 1px white solid;
+}
+.container tr td{
+    padding: 10px 5px;
+}
+.container tr td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+.container tr td a{
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid white;
+    width: 100%;
+    max-width: 400px;
+}
+.total-price td:last-child{
+    text-align: right;
+}
+.total-price th:last-child{
+    text-align: right;
+}
+
+
+/*-------------LOG IN PAGE----------------*/
+
+.account-page{
+    padding: 50px 0;
+    background: #555;
+}
+.form-container{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1 );
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#loginForm{
+    left: -300px;
+}
+#regForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#loginIndicator{
+    width: 100px;
+    border: none;
+    background: black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(0px);
+    transition: transform 1s;
+}
+
+/*--------------------CARRITO---------------*/
+#productContainer {
+    display: inline-flex;
+    
+}
+
+#productContainer h2 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    padding-top: 50px;
+}
+#productContainer img {
+    width: 300px;
+    height: 360px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+#productContainer p{
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+#selectedContainer h2 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    padding-top: 50px;
+    font-size: 22px;
+}
+#selectedContainer img {
+    width: 160px;
+    height: 210px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+#selectedContainer p{
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+#selectedContainer{
+    display: inline-flex;
+}
