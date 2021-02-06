@@ -1,8 +1,5 @@
 class DOMBuilder {
-    constructor() {
-  
-    }
-  
+    constructor() {}  
     h2(title) {
       const h2 = document.createElement('h2');
       h2.textContent = title;

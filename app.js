@@ -1,3 +1,5 @@
+
+
 function buildProductCard(product) {
     const div = document.createElement('div');
     const title = domBuilder.h2(product.name);
@@ -22,7 +24,7 @@ function buildProductCard(product) {
 
     // AGREGANDO EN UN ARRAY UN ELEMENTO
     selectedProducts.push(selectedProduct);
-    localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+    sessionStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
     buildCart();
   }
 
@@ -60,9 +62,8 @@ function buildProductCard(product) {
     }
 
     
-    // DOM 
-    const btnProducts = document.querySelectorAll('.btnProduct');
-    btnProducts.forEach(function(btnProduct) {
-      btnProduct.addEventListener('click', onSelectClick);
+    // JQUERY 
+    const btnProducts = $('.btnProduct').each(function (){
+      $(this).click(onSelectClick)
     })
   })
